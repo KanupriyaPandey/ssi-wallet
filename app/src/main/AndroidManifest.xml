@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.unisys.knowyourcustomer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.Splash"
+            android:theme="@style/AppTheme.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.Main"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:parentActivityName=".activity.Intro"/>
+        <activity
+            android:name=".activity.Intro"
+            android:theme="@style/AppTheme.Splash" />
+        <activity
+            android:name=".activity.Register"
+            android:theme="@style/AppTheme.Splash" />
+        <activity android:name=".activity.GovCred"
+            android:label="Government Credentials"/>
+        <activity android:name=".activity.CollegeCred"
+            android:label="College Credentials"/>
+        <activity android:name=".activity.JobCred"
+            android:label="Joc Certificate Credentials"/>
+        <activity android:name=".activity.JobApplication"
+            android:label="Job Application Credentials"/>
+        <activity android:name=".activity.BankCred"
+            android:label="Bank1 Credentials"/>
+        <activity android:name=".activity.Bank2Cred"
+            android:label="Bank2 Credentials"/>
+    </application>
+</manifest>
